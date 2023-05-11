@@ -51,21 +51,21 @@
 				 
 				var setInterval1=setInterval(function() {
 					let nTime = new Date();
-					dateDiff(nTime, "2019/11/24 0:0:0");
+					dateDiff(nTime, "2022/10/02 19:20:33");
 					// console.log(formartDate(nTime));
 					// console.log("时间差：" + dTime);
 				}, 1000)
 
 				function dateDiff(nTime, sTime) {
 					if (sTime == null || sTime == "") {
-						sTime = "2019/11/24 0:0:0";
+						sTime = "2022/10/02 19:20:33";
 					}
 					let day1 = new Date(sTime).getTime();
 					let iDays = (nTime.getTime() - day1) / (1000 * 60 * 60 * 24); //天数
 					let iHours = (nTime.getTime() - day1) / (1000 * 60 * 60); //小时数
 					let iMinutes = (nTime.getTime() - day1) / (1000 * 60); //分钟数
-					$("#sTime").html("开始时间: " + "2019-11-24 00:00:00");
-					$("#nTime").html("当前时间: " + formartDate(nTime));
+					$("#sTime").html("始: " + "2022/10/02 19:20:33");
+					//$("#nTime").html("当前时间: " + formartDate(nTime));
 					$("#dDays").html("相爱天数: " + iDays.toFixed(13) + "天");
 					$("#dHour").html("相爱小时: " + iHours.toFixed(10) + "小时");
 					$("#dMinutes").html("相爱分钟: " + iMinutes.toFixed(8) + "分钟");
@@ -129,7 +129,7 @@
 				margin: 0 auto;
 				text-align: center;
 				font-size: 30px;
-				color: #0FCECE;
+				color: #AA13AA;
 			}
 
 			#author {
@@ -143,10 +143,9 @@
 	<body>
 		<canvas id="c" style="position: absolute;z-index: -1;text-align: center;top: -20px;left: -20px;"></canvas>
 		<div id="div1">
-			<div class="loveName">小短腿❤傻孩子</div>
+			<div class="loveName">Armour❤玛玛😄</div>
 			<div id="loveTime" class="loveTime">
 				<div id="sTime" class="lTime"></div><br />
-				<div id="nTime" class="lTime"></div><br />
 				<div id="dDays" class="lTime"></div><br />
 				<div id="dHour" class="lTime"></div><br />
 				<div id="dMinutes" class="lTime"></div><br />
